@@ -3,6 +3,7 @@ const people = [
   { name: 'Giulia', age: 24 },
   { name: 'Marco', age: 67 }
 ];
-
 // Stampa in console tutti i nomi
+const names = people.map(person => `'${person.name}'`).join(', ');
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+console.log(names);
